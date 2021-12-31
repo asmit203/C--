@@ -8,11 +8,11 @@ int main()
 
     int numbers[5];
     int *p;
-    p = numbers;
-    *p = 10;
-    p++;
-    *p = 20;
-    p = &numbers[2];
+    p = numbers;//assigning the first blocks address to the pointer
+    *p = 10;//attributing value to it
+    p++;//getting the next value of the block of address in the array
+    *p = 20;//again assigning value
+    p = &numbers[2];//another way of fetching the third elements address
     *p = 30;
     p = numbers + 3;
     *p = 40;
